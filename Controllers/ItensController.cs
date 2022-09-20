@@ -6,14 +6,14 @@ namespace Atacadista.Controller
 {
     [ApiController]
     [Route("api/item")]
-    public class UserControler : ControllerBase
+    public class UserControler : ControllerBase 
     {
 
-        private static List<Item> itens = new List<Item>();
+        private static List<Item> itens = new List<Item>(); 
 
         [HttpGet]
         [Route("Listar")]
-        public IActionResult Listar()
+        public IActionResult Listar() 
         {
 
             return Ok(itens);
